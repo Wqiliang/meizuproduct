@@ -150,10 +150,38 @@ em{
     }
     .cartcontentwarp .cartcontent .cart-product .cart-col-select span{
         margin-left: 19px;
-        width: 550px;
+        width: 330px;
         color: #262626;
         display:inline-block;
+        vertical-align: middle;
     }
+    .cartcontentwarp .cartcontent .cart-product .cart-col-select span p:nth-child(1){
+        font-size:16px;
+        color: #262626;
+        white-space: nowrap;
+       overflow: hidden;
+       text-overflow: ellipsis;
+        margin-bottom:5px;
+    }
+    .cartcontentwarp .cartcontent .cart-product .cart-col-select span p:nth-child(2){
+        font-size:14px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: #8C8C8C;
+
+    }
+    .cartcontentwarp .cartcontent .cart-product .price span{
+        font-size:16px;
+        color:#666;
+    }
+    .cartcontentwarp .cartcontent .cart-product .price span:before{
+                 content:'\FFE5';
+                 margin-right:10px;
+               font-size:16px;
+                  color:#666;
+    }
+    
 
     
 
