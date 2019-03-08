@@ -1,0 +1,161 @@
+body { text-align: center; font-family:"14px/1.5 Helvetica,Tahoma,Arial,"Hiragino Sans GB","Microsoft YaHei",SimSun,Heiti,sans-serif;", arial;margin:0; padding:0; background: #FFF; font-size:12px; }
+div,form,img,ul,ol,li,dl,dt,dd {margin: 0; padding: 0; border: 0; }
+li{list-style-type:none;}
+*{margin:0;padding:0;}
+img{vertical-align:middle;border:none;}
+h1,h2,h3,h4,h5,h6 { margin:0; padding:0;font-size:12px; font-weight:normal;}
+a{text-decoration: none;}
+em{
+    font-style: normal;
+}
+.meizu-header{
+    width:100%;
+ background:#fff;
+ height:80px;
+ border:1px solid #efefef;
+}
+.meizu-header .meizu-header-wrap-1240{
+      width:1240px;
+      margin:0 auto;
+      height:80px;
+      overflow: hidden;
+      
+}
+.meizu-logo{
+    float:left;
+    height:80px;
+
+}
+.meizu-logo img{
+    max-width:125px;
+    margin-top:28px;
+}
+.layout-header-bread{
+    float:left;
+    margin-left:40px;
+    line-height: 80px;
+    overflow: hidden;
+
+}
+.layout-header-bread li{
+    float:left;
+    color:#999;
+    position:relative;
+    font-size:14px;
+}
+.layout-header-bread li:after{
+     content:">";
+    
+     color:#999;
+     margin:0 10px;
+
+}
+.layout-header-bread li.last{
+    content:"";
+    margin:0;
+}
+.layout-header-bread li.frist{
+      color:#333;
+}
+.layout-header-right .dingdan{
+    line-height: 80px;
+}
+.layout-header-right{
+    float:right;
+}
+.layout-header-right .dingdan a{
+    color:#999;
+    display:block;
+    margin-right:50px;
+}
+.cartcontentwarp{
+    background: #F4F6FA;
+    padding-bottom:40px;
+    overflow: hidden;
+}
+.cartcontentwarp .cartcontent{
+    width:1240px;
+    margin:0 auto;
+    overflow: hidden;
+
+}
+.cartcontentwarp .cartcontent .cart-header{
+    height: 50px;
+    margin-top: 10px;
+    font-size: 12px;
+    background-color: #fff;
+    color: rgba(51,51,51,.4);
+    border-bottom: 1px solid #EFEFEF;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.cartcontentwarp .cartcontent .cart-col-select{
+    width: 550px;
+    text-align: left;
+    padding-left: 24px;
+}
+ .mz-checkbox{
+    margin-right:5px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #BDBDBD;
+    border-radius: 2px;
+    background-color: #fff;
+    text-align: center;
+    font-size: 10px;
+    line-height: 17px;
+    cursor: pointer;}
+
+    .cartcontentwarp .cartcontent .cart-header .cart-col-select span{
+        color: #333;
+    cursor: pointer;
+    font-size: 14px
+    }
+    .cartcontentwarp .cartcontent .price{
+         width:220px;
+         text-align: center;
+    }
+    .cartcontentwarp .cartcontent .cart-col-number{
+        width:200px;
+        text-align: center;
+    }
+    .cartcontentwarp .cartcontent .cart-col-total  {
+        width:160px;
+        text-align: center;
+    }
+    .cartcontentwarp .cartcontent .cart-col-ctrl{
+        width: 110px;
+    text-align: right;
+    color: #00f5f5;
+    padding-right: 48px;
+    cursor: pointer;
+    }
+    .cart-product{
+        border-collapse: collapse;
+        border-spacing: 0;
+        border-bottom: 1px solid #EFEFEF;
+        background:#fff;
+        margin-top:20px;
+       
+    }
+    .cartcontentwarp .cartcontent .cart-product img{
+        width:100px;
+        height:100px;
+        margin-left: 19px;
+        display: inline-block;
+        vertical-align: middle;
+       
+    }
+    .cartcontentwarp .cartcontent .cart-product .cart-col-select span{
+        margin-left: 19px;
+        width: 550px;
+        color: #262626;
+        display:inline-block;
+    }
+
+    
+
+
+
