@@ -107,6 +107,10 @@ em{
     font-size: 10px;
     line-height: 17px;
     cursor: pointer;}
+    .mz-checkbox.mz-checked{
+        border-color: #00c3f5;
+        background-color: #00c3f5
+    }
 
     .cartcontentwarp .cartcontent .cart-header .cart-col-select span{
         color: #333;
@@ -181,8 +185,387 @@ em{
                font-size:16px;
                   color:#666;
     }
+    .cart-col-number .cart-product-number-adder{
+          position:relative;
+    }
+    /* .cart-col-number .cart-product-number-adder .cart-product-number-max{
+          position:absolute;
+          top:30px;
+          left:0;
+          width:100%;
+          text-align: center;
+          font-size: 14px;
+          margin-top: 4px;
+          color: #999;
+    } */
+    .cart-col-number .cart-product-number-adder .mz-adder{
+        width: auto;
+        height: 24px;
+        line-height: 24px;
+         border-radius: 2px!important;
+        display:inline-block;
+        vertical-align: middle;
+        overflow: hidden;
+    } 
+    .cart-col-number .cart-product-number-adder .mz-adder .mz-adder-subtract{
+        width: 24px;
+        color: #595959;
+        position: relative;
+      
+        outline: 0;
+        padding: 0;
+        margin: 0;
+        outline: 0;
+        border: none;
+        height: 100%;
+        cursor: pointer;
+        background-color: transparent;
+        /* display:inline-block; */
+        float:left;
+      
+    } 
+    .cart-col-number .cart-product-number-adder .mz-adder .mz-adder-subtract::after{
+        width: 12px;
+        height: 2px;
+        position: absolute;
+        left:50%;
+        top:50%;
+        content:"";
+        background:  #333;
+        transition: background-color .5s;
+        margin-left: -4px;
+        
+    }
+       
+    .cart-col-number .cart-product-number-adder .mz-adder-num{
+        width:35px;
+        /* line-height: 24px; */
+        float: left;
+
+        border-left: 1px solid #EFEFEF;
+        border-right: 1px solid #EFEFEF;
+       
+    }
+    .cart-col-number .cart-product-number-adder .mz-adder-num input{
+        width:100%;
+        height:100%;
+        border:none;
+        outline: 0;
+        color:#333;
+        font-size:18px;
+      
+        text-align: center;
+        display:inline-block;
+
+    }
+    .cart-col-number .cart-product-number-adder .mz-adder .mz-adder-add{
+        width: 24px;
+       color: #595959;
+       height: 100%;
+       cursor: pointer;
+       background-color: transparent;
+       outline: 0;
+       border: none;
+       position: relative;
+       folat:left;
+      
+      
+       
+       
+    }
+    .cart-col-number .cart-product-number-adder .mz-adder .mz-adder-add::after{
+         position: absolute;
+         left:50%;
+         top:50%;
+         width:12px;
+         height:2px;
+         background:#333;
+        content:"";
+        margin-left:-6px;
+
+
+    }
+    .cart-col-number .cart-product-number-adder .mz-adder .mz-adder-add::before{
+        position: absolute;
+        content:"";
+        width:2px;
+        height: 12px;
+        top:50%;
+        left:50%;
+        background: #333;
+        margin-top:-5px;
+        margin-left:-1px;
+
+
+    }
+    .tol:before{
+         content: "\FFE5";
+         margin-right:8px;
+         font-size:16px;
+         color:#E02B41;
+    }
+    .tol{
+        color:#E02B41;
+        font-size: 16px;
+    }
+
+
+
+
+    footer{
+        font-size: 14px;
+        color: #515151;
+        position: relative;
+        background-color: #fff;
+    }
+    footer .footerlink{
+        padding: 48px 0 20px;
+        border-top: 1px solid #f1f1f1;
+    }
+    footer .footerlink .footerwarp{
+        max-width: 1240px;
+        margin: 0 auto;
+    }
+    footer .footerlink .footerwarp .meizu-row::after{
+        display:table;
+        content: "";
+        clear: both;
+       overflow: hidden;
+        height:0;
+        
+    }
+    footer .footerlink .footerwarp .meizu-row ul{
+        width:1000px;
+        float:left;
+    }
+    footer .footerlink .footerwarp .meizu-row ul li{
+        float:left;
+        width:15%;
+        text-align: center;
+    }
+    footer .footerlink .footerwarp .meizu-row ul li a{
+        display:block;
+        /* overflow: hidden; */
+       
+        font-size: 12px;
+        color: #666;
+        width:100%;
+    }
+    footer .footerlink .footerwarp .meizu-row ul li img{
+        width: 50px;
+        display: block;
+          margin: 0 auto; 
+    }
+    footer .footerlink .footerwarp .meizu-row ul li span{ 
+       
+        color:#999;
+        line-height: 30px;
+        display:block;
+        
+    }
+    .onlive-server{
+        margin-top:-18px;
+        float:right;
+    }
+    .onlive-server span:nth-child(1){
+        color: #999;
+        font-size: 12px;
+        line-height: 30px;
+    }
+    .onlive-server p{
+        color: #00c3f5;
+        font-size: 25px;
+        font-weight: 400;
+         margin-top: -6px;
+        line-height: 40px;
+    }
+    .onlive-server .server{
+        height: 30px;
+        padding: 0 16px;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        line-height: 30px;
+        color: #fff;
+        border-radius: 20px;
+        margin-top: 3px;
+        display: inline-block;
+        font-size: 14px;
+        background: #0bbbef;
+    }
+    footer .footerlink .footerwarp hr{
+        height:1px;
+        border: none;
+        border-top:1px solid #eee;
+        margin: 10px auto 28px;
+       
+    }
+    
+    .meizulast{
+        position:relative;
+        overflow: hidden;
+    }
+    .meizulast .meizu-footer-info-left{
+        float:left;
+        color: #999;
+        font-size: 12px;
+    }
+    .meizulast .meizu-footer-info-left ul li{
+          float:left;
+          padding-right:15px;
+          border-right:1px solid #d6d6d6;
+          margin-right:15px;
+          text-align: left;
+          position: relative;
+    
+    }
+    .meizulast .meizu-footer-info-left ul{
+        overflow: hidden;
+        margin-bottom:15px;
+    }
+    .meizulast .meizu-footer-info-left ul li i{
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        top: 0;
+        left: 0;
+        background-image: url("https://image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAKSCAMAAACN0onrAAAABGdBT…CcGbDsSc2ZK+LvIP5HHgoHkkK4A0mhKqc4b8chzh8kp/8Bjf60NTpOasIAAAAASUVORK5CYII=");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .meizulast .meizu-footer-info-left ul .s1{
+        padding-left:25px;
+    }
+    .meizu-footer-certificate{
+      text-align: left;
+    }
+    .meizu-footer-certificate a{
+        margin: 0 3px;
+    }
+    .meizu-footer-certificate span:nth-child(1){
+        padding-right:15px;
+    }
+    .meizu-footer-info-right{
+        float:right;
+        margin-top:18px;
+        
+    
+    }
+    .meizu-footer-certificate a{
+      color:#999;
+    }
+    .meizu-footer-info-right i:nth-child(1){
+        background-image: url("https://fms.res.meizu.com/dms/2019/01/07/3b085af8-a47b-453c-b147-a4b352fb3a14.png");
+        background-size:96%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        display: inline-block;
+        width: 21px;
+        height: 18px;
+        
+    }
+    .meizu-footer-info-right i:nth-child(2){
+        background-image: url("https://fms.res.meizu.com/dms/2019/01/07/58e3e041-5543-4414-aaf1-d8e1fd539af6.png");
+        background-size:96%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        display: inline-block;
+        width: 21px;
+        height: 18px;
+        
+    }
+    .meizu-footer-info-right i:nth-child(3){
+        background-image: url("https://fms.res.meizu.com/dms/2019/01/07/52cba4a4-b3a6-4522-9883-d3a918e7d4a9.png");
+        background-size:96%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        display: inline-block;
+        width: 21px;
+        height: 18px;
+        
+    }
+    .meizu-footer-info-right i:nth-child(4){
+        background-image: url("https://fms.res.meizu.com/dms/2019/01/07/bcccf9d2-e0e5-441b-b4a3-f78c12bc3933.png");
+        background-size:96%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        display: inline-block;
+        width: 21px;
+        height: 18px;
+        
+    }
+    .meizu-footer-info-right i{
+        margin-left:15px;
+    }
+    .cartfooter{
+          height:70px;
+          background: #fff;
+          overflow: hidden;
+          margin-top:10px;
+          
+
+    }
+    .cartfooter .goleft{
+        float:left;
+        margin-left:40px;
+        font-size:16px;
+        color:#666;
+
+
+    }
+    .cartfooter .goleft span{
+        height:100%;
+        line-height: 70px;
+        text-align: center;
+        font-size: 16px;
+        color:#666;
+       
+    }
+    .cartfooter .goright{
+         float:right;
+    }
+    .cartfooter .goright span:nth-child(1){
+        font-size:18px;
+        color:#E02B41;
+        height:100%;
+        line-height: 70px;
+        text-align: center;
+        font-weight: bolder;
+
+    }
+    .cartfooter .goright span:nth-child(1):before{
+        content:"\FFE5";
+        margin-right:10px;
+        color:#E02B41;
+    }
+    .cartfooter .goright span:nth-child(2){
+          margin-left:50px;
+          margin-right:40px;
+          margin-top:15px;
+          width:60px;
+          height:40px;
+        line-height:40px;
+          display:inline-block;
+          padding: 0 10px;
+          border-radius: 2px;
+          background: #F66567!important;
+          color:#fff;
+          font-size:16px;
+          cursor: pointer;
+        
+    }
+   
     
 
+    
+       
+       
+      
+      
+      
+      
+    
+   
     
 
 

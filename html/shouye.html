@@ -14,6 +14,7 @@
     
 </head>
 <body>   <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+         <script src="../js/jquery.cookie.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
         <script src="../js/fy.js"></script>
         
@@ -52,7 +53,7 @@
         <div class="meizu-header">
           <div class="meizu-header-wrap-1240">
               <div class="meizu-header-cart">
-                  <span class="iconfont">&#xe61a;</span>
+                  <a href="Settlement.html"><span class="iconfont">&#xe61a;</span></a>
                   <span class="num">10</span>
 
               </div>
@@ -100,7 +101,7 @@
         </div>
 
     </div>
-    <div class="hidewarp">
+    <!-- <div class="hidewarp">
         <div class="hideinner">
             <ul>
                 <li>
@@ -117,7 +118,7 @@
             </ul>
         </div>
 
-    </div>
+    </div> -->
 
 
 
@@ -198,9 +199,9 @@
                             </li>
                             
                             <li class="small">
-                                            <div class="goodsbox">
-                                                    <a class="" href="">
-                                                        <img src="https://openfile.meizu.com/group1/M00/05/E1/Cgbj0FtqgkWALkhxAAkE5Uiy2no917.png"/>
+                                            <div class="goodsbox" data-id="good1">
+                                                    <a href="details.html">
+                                                       <img data-img="" src="https://openfile.meizu.com/group1/M00/05/E1/Cgbj0FtqgkWALkhxAAkE5Uiy2no917.png"/>
                                                         <span class="goods-info">
                                                             <span class="goods-name">魅族 16th Plus</span>
                                                             <span class="goods-desc">骁龙845 屏幕下指纹</span>
@@ -212,55 +213,55 @@
                                                     </a>
                                                 </div>
                             </li>
-                            <li class="small">
+                            <li class="small" data-id="good2">
                                     <div class="goodsbox">
-                                            <a class="" href="">
-                                                <img src="https://openfile.meizu.com/group1/M00/05/E1/Cgbj0FtqgkWALkhxAAkE5Uiy2no917.png"/>
+                                            <a href="details.html">
+                                                <img data-img="" src="https://openfile.meizu.com/group1/M00/06/A9/Cgbj0FusSK2AQZgiAAlFKHoO-co889.png"/>
                                                 <span class="goods-info">
-                                                    <span class="goods-name">魅族 16th Plus</span>
-                                                    <span class="goods-desc">骁龙845 屏幕下指纹</span>
+                                                    <span class="goods-name">魅族 X8</span>
+                                                    <span class="goods-desc">人脸指纹双解锁 旗舰双摄</span>
                                                     <span class="goods-price">
-                                                        <i>￥2998</i>
+                                                        <i>￥1298</i>
                                                     </span>
                                                 </span>
                                                 <span class="product-sign red">限时券</span>
                                             </a>
                                         </div>
                             </li>
-                            <li class="small">
+                            <li class="small" data-id="good3">
                                     <div class="goodsbox">
-                                            <a class="" href="">
-                                                <img src="https://openfile.meizu.com/group1/M00/05/E1/Cgbj0FtqgkWALkhxAAkE5Uiy2no917.png"/>
+                                            <a href="details.html">
+                                                <img data-img="" src="https://openfile.meizu.com/group1/M00/06/A9/Cgbj0FusSK2AQZgiAAlFKHoO-co889.png"/>
                                                 <span class="goods-info">
-                                                    <span class="goods-name">魅族 16th Plus</span>
-                                                    <span class="goods-desc">骁龙845 屏幕下指纹</span>
+                                                    <span class="goods-name">魅族 16 X</span>
+                                                    <span class="goods-desc">高通骁龙710 屏幕下指纹 旗舰双摄</span>
                                                     <span class="goods-price">
-                                                        <i>￥2998</i>
+                                                        <i>￥1798</i>
                                                     </span>
                                                 </span>
                                                 <span class="product-sign red">限时券</span>
                                             </a>
                                         </div>
                             </li>
-                            <li class="small">
+                            <li class="small" data-id="good4">
                                     <div class="goodsbox">
-                                            <a class="" href="">
-                                                <img src="https://openfile.meizu.com/group1/M00/05/E1/Cgbj0FtqgkWALkhxAAkE5Uiy2no917.png"/>
+                                            <a href="details.html">
+                                                <img data-img="" src="https://openfile.meizu.com/group1/M00/06/D4/Cgbj0VvQPnuAAwPPAAMv8zzt2DE910.png"/>
                                                 <span class="goods-info">
-                                                    <span class="goods-name">魅族 16th Plus</span>
-                                                    <span class="goods-desc">骁龙845 屏幕下指纹</span>
+                                                    <span class="goods-name">魅族 Note8</span>
+                                                    <span class="goods-desc">全像素双核对焦 大电池长续航</span>
                                                     <span class="goods-price">
-                                                        <i>￥2998</i>
+                                                        <i>￥999</i>
                                                     </span>
                                                 </span>
                                                 <span class="product-sign red">限时券</span>
                                             </a>
                                         </div>
                             </li>
-                            <li class="small">
+                            <li class="small" data-id="good5">
                                     <div class="goodsbox">
-                                            <a class="" href="">
-                                                <img src="https://openfile.meizu.com/group1/M00/05/E1/Cgbj0FtqgkWALkhxAAkE5Uiy2no917.png"/>
+                                            <a href="details.html">
+                                                <img data-img="https://openfile.meizu.com/group1/M00/05/E1/Cgbj0FtqgkWALkhxAAkE5Uiy2no917.png" src="https://openfile.meizu.com/group1/M00/05/E1/Cgbj0FtqgkWALkhxAAkE5Uiy2no917.png"/>
                                                 <span class="goods-info">
                                                     <span class="goods-name">魅族 16th Plus</span>
                                                     <span class="goods-desc">骁龙845 屏幕下指纹</span>
@@ -273,10 +274,25 @@
                                         </div>
 
                             </li>
-                            <li class="small">
+                            <li class="small" data-id="good6">
                                     <div class="goodsbox">
-                                            <a class="" href="">
-                                                <img src="https://openfile.meizu.com/group1/M00/05/E1/Cgbj0FtqgkWALkhxAAkE5Uiy2no917.png"/>
+                                            <a href="details.html">
+                                                <img data-img="https://openfile.meizu.com/group1/M00/06/A9/Cgbj0FusSK2AQZgiAAlFKHoO-co889.png" src="https://openfile.meizu.com/group1/M00/05/E1/Cgbj0FtqgkWALkhxAAkE5Uiy2no917.png"/>
+                                                <span class="goods-info">
+                                                    <span class="goods-name">魅族 16th Plus</span>
+                                                    <span class="goods-desc">骁龙845 屏幕下指纹</span>
+                                                    <span class="goods-price">
+                                                        <i>￥2998</i>
+                                                    </span>
+                                                </span>
+                                                <span class="product-sign red">限时券</span>
+                                            </a>
+                                        </div>
+                            </li>
+                            <li class="small" data-id="good7">
+                                    <div class="goodsbox">
+                                            <a href="details.html">
+                                                <img data-img="https://openfile.meizu.com/group1/M00/06/CC/Cgbj0VvINL-AGM20AAw4GirVtYA698.png"src="https://openfile.meizu.com/group1/M00/05/E1/Cgbj0FtqgkWALkhxAAkE5Uiy2no917.png"/>
                                                 <span class="goods-info">
                                                     <span class="goods-name">魅族 16th Plus</span>
                                                     <span class="goods-desc">骁龙845 屏幕下指纹</span>
@@ -290,23 +306,8 @@
                             </li>
                             <li class="small">
                                     <div class="goodsbox">
-                                            <a class="" href="">
-                                                <img src="https://openfile.meizu.com/group1/M00/05/E1/Cgbj0FtqgkWALkhxAAkE5Uiy2no917.png"/>
-                                                <span class="goods-info">
-                                                    <span class="goods-name">魅族 16th Plus</span>
-                                                    <span class="goods-desc">骁龙845 屏幕下指纹</span>
-                                                    <span class="goods-price">
-                                                        <i>￥2998</i>
-                                                    </span>
-                                                </span>
-                                                <span class="product-sign red">限时券</span>
-                                            </a>
-                                        </div>
-                            </li>
-                            <li class="small">
-                                    <div class="goodsbox">
-                                            <a class="" href="">
-                                                <img src="https://openfile.meizu.com/group1/M00/05/E1/Cgbj0FtqgkWALkhxAAkE5Uiy2no917.png"/>
+                                            <a href="details.html">
+                                                <img data-img="https://openfile.meizu.com/group1/M00/06/D4/Cgbj0VvQPnuAAwPPAAMv8zzt2DE910.png" src="https://openfile.meizu.com/group1/M00/05/E1/Cgbj0FtqgkWALkhxAAkE5Uiy2no917.png"/>
                                                 <span class="goods-info">
                                                     <span class="goods-name">魅族 16th Plus</span>
                                                     <span class="goods-desc">骁龙845 屏幕下指纹</span>
@@ -425,6 +426,18 @@
 
         </div>
     </footer>
+    <div class="gotop">
+        <ul>
+                <li>
+                   
+                   APP
+                </li>
+                <li>
+                 
+                   返回顶部
+                </li>
+        </ul>
+    </div>
       
 </body>
 </html>
