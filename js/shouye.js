@@ -41,29 +41,21 @@
       var price = $(this).find(".goods-price").children("i").html()
       var desc = $(this).find(".goods-desc").html()
       var name = $(this).find(".goods-name").html()
-            
-        var cookiestr = $.cookie("cart")? $.cookie("cart"):""
-        var cookieobj =  zhuanhuanstrobj(cookiestr)
-            cookieobj = {
-                    id :{
-                           "name":name,
-                           "price":price,
-                           "desc":desc,
-                            "name":name,
-                            "img":img
-                            
-                    }
-            }
-            $.cookie("cart",JSON.stringify(cookieobj),{
-              expires:7,path:"/"
-            })
+      obj = {      "id":id,
+                  "name":name,
+                  "price":price,
+                 "desc":desc,
+                    "name":name,
+                    "img":img
+            } 
+          var str = JSON.stringify(obj)
+        var url ="details.html?name="+escape(str) 
+       
+        location.href= url    
+      
+    
      })
+
      
  })
- function zhuanhuanstrobj(str){
-     if(!str){
-        return {}
-     }else{
-         return JSON.parse(str)
-     }
- }
+
