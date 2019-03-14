@@ -14,18 +14,19 @@
 
      })
  }
- 
-  // $(".phone").on("mouseover",function(){
-  //     $(".meizu-header").addClass("toggle")
-  //      $(".meizu-header-wrap-1240 ul li").css({
-  //         color:"#515151"
+
+
+   $(".phone").on("mouseover",function(){
+       $(".meizu-header").addClass("toggle")
+       $(".meizu-header-wrap-1240 ul li").css({
+          color:"#515151"
           
-  //      })
-  //      $(".iconfont").css({
-  //           color:"#515151"
-  //      })
+        })
+      $(".iconfont").css({
+             color:"#515151"
+        })
      
-  // })
+  })
 
 //  $(".phone").on("mouseover",function(){
 
@@ -34,6 +35,28 @@
 //         },500)
        
 //  })
+$(function(){
+  carinit()
+ })
+ function zhuanhuantoobj(str){
+  if(!str){
+       return {}
+  }else{
+        return JSON.parse(str)
+  }
+}
+
+function carinit(){
+  var str = localStorage.getItem("cart")? localStorage.getItem("cart"):""
+var obj = zhuanhuantoobj(str) 
+var num = 0
+for(var key in obj){
+  num+= obj[key].num
+
+}
+$(".num").html(num)
+}
+
  $(".boxwarp ul li").each(function(){
      $(this).on("click",function(){
       var id = $(this).attr("data-id")

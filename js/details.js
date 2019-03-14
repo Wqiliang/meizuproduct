@@ -8,28 +8,30 @@ $(window).on("scroll",function(){
        
     }
 })
-   
-//    function zhuanhuanstrobj(str){
-//     if(!str){
-//        return {}
-//     }else{
-//         return JSON.parse(str)
-//     }
-// }
-// //  var cookiestr = $.cookie("cart")
-//   var str = localStorage.getItem("cart")
+$(function(){
+    carinit()
+})
+function carinit(){
+    var str = localStorage.getItem("cart")? localStorage.getItem("cart"):""
+  var obj = zhuanhuantoobj(str) 
+  var num = 0
+  for(var key in obj){
+    num+= obj[key].num
+  
+  }
+  $(".num").html(num)
+  }
+  
 
-// // var cookieobj = zhuanhuanstrobj(cookiestr)
-// // console.   window.onload = function(){
-            var url = window.location.search;
-            var request = new Object();
-            if(url.indexOf("?")!=-1){ 
-                var str = url.substr(1);  
-                var strs = str.split("&");
-                for(var i=0;i<strs.length;i++){
-                    request[strs[i].split("=")[0]]=unescape(strs[i].split("=")[1]);
-                }
-            }
+            // var url = window.location.search;
+            // var request = new Object();
+            // if(url.indexOf("?")!=-1){ 
+            //     var str = url.substr(1);  
+            //     var strs = str.split("&");
+            //     for(var i=0;i<strs.length;i++){
+            //         request[strs[i].split("=")[0]]=unescape(strs[i].split("=")[1]);
+            //     }
+            // }
            
         
         function GetQueryString(name)
@@ -40,9 +42,9 @@ $(window).on("scroll",function(){
         }
         var res = JSON.parse(GetQueryString("name"))
         console.log(res)
-//   var obj = zhuanhuanstrobj(str)
- 
 
+ 
+   
 
   $(".main").html(
     ` <div class="nav">
@@ -85,32 +87,55 @@ $(window).on("scroll",function(){
         <div class="buy">加入购物车</div>`
 
   )
+
     var id = res.id
-      console.log(id)
-//     var obj ={}
-
+     
+     
                      
-// $(function(){
-//        $(".main").on("click",".buy",function(){
-//         var desc = $(".main").find(".property-hd").children(".mod-info").html()
-       
-//         var name = $(".main").find(".property-hd").children("h1").html()
-//         var price = $(".main").find(".titleprice").children("span").html()
+ $(function(){
+       $(".buy").on("click",function(){
+         var desc = $(".main").find(".property-hd").children(".mod-info").html()
+            
+         var name = $(".main").find(".property-hd").children("h1").html()
+        
+         var price = $(".main").find(".titleprice").children("span").html()
+         
+         var str = localStorage.getItem("cart")? localStorage.getItem("cart"):"";
+          var obj = zhuanhuantoobj(str)
+          if(id in obj){
 
-//            obj = {
-//                   "name":name,
-//                 "desc":desc,
-//                 "price":price,
+            obj[id].num ++
 
-//            }
+        }else{
+               obj[id]={
+                 
+                     "name":name,
+                     "desc":desc,
+                     "price":price,
+                      "num" : 1
+               }
+            }
+           
+        console.log(obj)
+                  
+        localStorage.setItem("cart",JSON.stringify(obj))
+         var num = Number($(".num").html())        
+         $(".num").html(num + 1)    
+          
+        })
+      
+ })
 
-//        })
-// })
+ 
 
-//   var jsonstr = JSON.stringify(obj)
-//   console.log($("#tiaozhuan"))
-// $("#tiaozhuan").on("click",function(){
-//       location.href = 'Settlement.html?id="jsonstr"'
-// })  
+ 
+
+ function zhuanhuantoobj(str){
+     if(!str){
+          return {}
+     }else{
+           return JSON.parse(str)
+     }
+ }
 
         
